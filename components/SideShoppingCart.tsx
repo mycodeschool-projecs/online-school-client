@@ -6,7 +6,6 @@ import { StaticImageData } from "next/image";
 import Image from "next/image";
 import ButtonFull from "./ButtonFull";
 import Link from "next/link";
-import { determinePath } from "@/modules/utils/utils";
 
 interface Course {
   title: string;
@@ -98,7 +97,7 @@ const SideShoppingCart: React.FC<SideShoppingCartProps> = ({
           </div>
 
           <Link
-            href={determinePath("/checkout")}
+            href={"/checkout"}
             className="mt-4 grid place-content-center"
             onClick={toggleCart}
           >

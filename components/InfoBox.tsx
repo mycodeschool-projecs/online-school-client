@@ -13,7 +13,6 @@ import LoginContextType from "@/modules/context/LoginContextType";
 import SideShoppingCart from "./SideShoppingCart";
 import freeImage from "@/assets/free.jpg";
 import meetImage from "@/assets/meet.jpg";
-import { determinePath } from "@/modules/utils/utils";
 
 const InfoBox = () => {
   const { user, logOut } = useContext(LoginContext) as LoginContextType;
@@ -173,20 +172,20 @@ const InfoBox = () => {
                 <div className="flex flex-col">
                   {user.userRole === "ADMIN" && (
                     <Link
-                      href={determinePath("/dashboard")}
+                      href={"/dashboard"}
                       className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                     >
                       Dashboard
                     </Link>
                   )}
                   <Link
-                    href={determinePath("/profile")}
+                    href={"/profile"}
                     className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                   >
                     Contul Meu
                   </Link>
                   <Link
-                    href={determinePath("/courses")}
+                    href={"/courses"}
                     className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                   >
                     Cursurile Mele
@@ -201,13 +200,13 @@ const InfoBox = () => {
               ) : (
                 <div className="flex flex-col">
                   <Link
-                    href={determinePath("/login")}
+                    href={"/login"}
                     className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                   >
                     Autentificare
                   </Link>
                   <Link
-                    href={determinePath("/register")}
+                    href={"/register"}
                     className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
                   >
                     Înregistrare

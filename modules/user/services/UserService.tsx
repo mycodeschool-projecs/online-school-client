@@ -57,7 +57,7 @@ class UserService extends ApiServer {
   updateProfilePhoto = async (formData: FormData , token:string ): Promise<any> => {
    
     const response = await this.api<FormData, any>(
-      `/server/updateProfilePicture`,
+      `/updateProfilePicture`,
       "POST",
       formData,
       token

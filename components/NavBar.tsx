@@ -2,7 +2,6 @@
 import React from "react";
 import NavLink from "./NavLink";
 import { motion } from "framer-motion";
-import { determinePath } from "@/modules/utils/utils";
 
 const NavBar = () => {
   const links = [
@@ -37,7 +36,7 @@ const NavBar = () => {
         variants={containerVariants}
       >
         {links.map((link, index) => (
-          <NavLink key={index} link={{ ...link, url: determinePath(link.url) }}  />
+          <NavLink key={index} link={{ ...link, url: link.url }}  />
         ))}
       </motion.ul>
     </motion.section>
