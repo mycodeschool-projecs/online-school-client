@@ -6,7 +6,6 @@ import { Course } from '@/modules/lessons/data';
 import Link from 'next/link';
 import { FaArrowLeft, FaBookOpen, FaStar, FaClock, FaInfoCircle } from 'react-icons/fa';
 import ButtonFull from './ButtonFull';
-import { determinePath } from '@/modules/utils/utils';
 
 interface CourseDetailProps {
   course: Course;
@@ -22,7 +21,7 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
       transition={{ duration: 0.4 }}
     >
       <div className="flex items-center mb-6">
-        <Link href={determinePath("/courses")} className="hover:text-primary text-gray-600 flex items-center transition-colors">
+        <Link href={"/courses"} className="hover:text-primary text-gray-600 flex items-center transition-colors">
           <FaArrowLeft className="mr-2" /> Înapoi la Cursuri
         </Link>
       </div>
@@ -88,7 +87,7 @@ const CourseDetail: React.FC<CourseDetailProps> = ({ course }) => {
       </div>
 
       <div className="flex justify-center mt-8">
-        <ButtonFull text="Înscrie-te acum" redirectTo={determinePath(`/courses/shop/${course.code}`)} />
+        <ButtonFull text="Înscrie-te acum" redirectTo={`/courses/shop/${course.code}`} />
       </div>
     </motion.div>
   );
