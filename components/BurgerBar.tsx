@@ -1,15 +1,12 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAddressBook,
   faBook,
   faGraduationCap,
   faHouse,
-  faX,
 } from "@fortawesome/free-solid-svg-icons";
-import LogoBox from "./LogoBox";
 import BurgerLink from "./BurgerLink";
 import ButtonFull from "./ButtonFull";
 import Image from "next/image";

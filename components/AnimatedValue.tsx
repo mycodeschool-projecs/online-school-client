@@ -1,4 +1,3 @@
-import exp from "constants";
 import { useEffect, useState } from "react";
 
 const AnimatedValue: React.FC<{ value: number }> = ({ value }) => {

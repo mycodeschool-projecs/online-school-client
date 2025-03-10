@@ -5,7 +5,6 @@ import trainer from "@/assets/instructor3.jpg";
 import background from "@/assets/backgroundCourses.png";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import ButtonFull from "./ButtonFull";
 import ButtonBorder from "./ButtonBorder";
 
 const AbonareSection = () => {

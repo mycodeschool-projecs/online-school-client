@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import CoursesStatsBox from "./CoursesStatsBox";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
