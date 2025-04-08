@@ -24,7 +24,7 @@ class UserService extends ApiServer {
 
   register = async(user : RegisterRequest):Promise<RegisterResponse> => {
     const data = await this.api<RegisterRequest, RegisterResponse>(
-      `/register`,
+      `register`,
       "POST",
       user,
       ""
